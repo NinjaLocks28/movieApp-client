@@ -150,7 +150,7 @@ useEffect(() => {
                         <th>{movie.year}</th>
                         <th>{movie.description}</th>
                         <th>
-                            <Button className="me-2" size="sm">Get Comment</Button>
+                            {/* <Button className="me-2" size="sm">Get Comment</Button> */}
                             {<MovieModalUpdate ctitle={movie.title} cdirector={movie.director} cgenre={movie.genre} cyear={movie.year} cdescription={movie.description} movie={movie._id} onUpdateMovie={onUpdateMovie} />}
                             <Button variant="danger" size="sm" onClick={ (e) => onDeleteMovie(e , movie._id )}>
                                 Delete
